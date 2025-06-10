@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example.mq</groupId>
+    <artifactId>mq-bindings-generator</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- IBM MQ All Client (contains MQ JMS, etc.) -->
+        <dependency>
+            <groupId>com.ibm.mq</groupId>
+            <artifactId>com.ibm.mq.allclient</artifactId>
+            <version>9.3.3.0</version>
+        </dependency>
+        <!-- Since you need the MQ JMS client specifically -->
+        <dependency>
+            <groupId>com.sun.jndi</groupId>
+            <artifactId>fscontext</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jndi</groupId>
+            <artifactId>providerutil</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+    </dependencies>
+</project>
