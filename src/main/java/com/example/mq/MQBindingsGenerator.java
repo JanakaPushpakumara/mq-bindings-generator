@@ -41,8 +41,8 @@ public class MQBindingsGenerator {
             context.bind("myQueueConnectionFactory", qcf);
 
             // === Queue Destination ===
-            MQQueue queue = new MQQueue("QUEUE1");
-            context.bind("myQueue", queue);
+            MQQueue queue = new MQQueue("SMSSTORE");
+            context.bind("SMSStore", queue);
 
             // === Topic Connection Factory ===
             MQTopicConnectionFactory tcf = new MQTopicConnectionFactory();
