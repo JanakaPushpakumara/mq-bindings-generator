@@ -49,7 +49,7 @@ Use the docker cp command to copy the JAR files from the container to your local
    3. ```bash 
       mvn clean compile exec:java \
       -Dexec.mainClass="com.example.mq.MQBindingsGenerator" \
-      -Djndi.provider.url=file:/your/custom/path
+      -Djndi.provider.url=file:/Users/janakap/WSO2/SynapseIntegrations/wso2mi-4.2.0/conf/jndidirectory
       ```
 
 ### 4. Output
